@@ -39,7 +39,7 @@ export const profile: Profile = {
   title: 'Enterprise Solution & Transformation Architect',
   headline: 'Connecting business outcomes to architecture that can be built and run.',
   lede: 'Seventeen years across customer engagement, presales, solution consulting and architecture. I focus on application modernization, enterprise integration, and AI-enabled managed services.',
-  location: '[City, Country]',
+  location: 'Bengaluru, India',
   tags: [
     'Application modernization',
     'Integration architecture',
