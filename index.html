@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{title}}</title>
+    <meta name="description" content="{{description}}" />
+    <meta name="author" content="{{author}}" />
+    <meta name="theme-color" content="{{themeColor}}" />
+    <link rel="canonical" href="{{siteUrl}}/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{siteName}}" />
+    <meta property="og:title" content="{{title}}" />
+    <meta property="og:description" content="{{description}}" />
+    <meta property="og:url" content="{{siteUrl}}/" />
+    <meta property="og:image" content="{{siteUrl}}{{ogImage}}" />
+    <meta property="og:locale" content="{{locale}}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{title}}" />
+    <meta name="twitter:description" content="{{description}}" />
+    <meta name="twitter:image" content="{{siteUrl}}{{ogImage}}" />
+
+    <script type="application/ld+json">{{jsonLd}}</script>
+    <!-- Sets the saved or system colour theme before first paint to avoid a flash. -->
+    <script src="/theme-init.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p style="padding:2rem;font-family:system-ui,sans-serif">
+        This portfolio needs JavaScript to display. Please enable it in your browser.
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
