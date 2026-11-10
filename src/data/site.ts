@@ -255,8 +255,8 @@ export const writingCadence =
 
 export const contact: ContactInfo = {
   intro: 'I welcome conversations with fellow architects and practitioners.',
-  email: '[your-email@example.com]',
-  linkedinUrl: '',
+  email: 'nooman2086@gmail.com',
+  linkedinUrl: 'https://www.linkedin.com/in/noomanm/',
   notice:
     'This site is a personal professional profile. It does not offer services for hire. Views are my own and do not represent my employer. No customer names, pricing or confidential material appear here.',
 };
