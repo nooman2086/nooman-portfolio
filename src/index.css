@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 245 246 248;
+  --surface: 255 255 255;
+  --ink: 16 25 43;
+  --muted: 90 101 120;
+  --line: 221 225 232;
+  --accent: 10 106 114;
+  --accent-soft: 225 240 241;
+  --warn: 138 90 0;
+  --warn-soft: 251 240 217;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: 13 20 32;
+  --surface: 20 29 44;
+  --ink: 232 236 243;
+  --muted: 154 166 186;
+  --line: 38 50 74;
+  --accent: 92 196 204;
+  --accent-soft: 18 48 58;
+  --warn: 232 184 90;
+  --warn-soft: 45 36 17;
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-bg font-sans text-[17px] leading-relaxed text-ink antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display font-medium tracking-tight;
+    text-wrap: balance;
+  }
+  a {
+    @apply underline-offset-4;
+  }
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-accent;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    * {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-wider text-muted;
+  }
+  .card {
+    @apply rounded-md border border-line bg-surface p-5;
+  }
+  .btn {
+    @apply inline-flex items-center gap-2 rounded-md border border-line bg-surface px-4 py-2 text-sm font-medium text-ink no-underline transition-colors hover:border-accent hover:text-accent;
+  }
+}
